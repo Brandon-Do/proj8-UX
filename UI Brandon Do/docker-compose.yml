@@ -1,0 +1,16 @@
+version: '3.3'  # version of compose format
+
+services:
+  web:
+    build: ./brevet
+
+    command: python -u app.py
+    ports:
+      - "5003:5000"
+    volumes:
+      - ./brevet:/todo
+    links:
+      - db
+  db:
+    image: mongo:3.0.2
+    command: --smallfiles

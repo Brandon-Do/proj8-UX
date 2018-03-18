@@ -1,0 +1,17 @@
+/*
+ * Styles for ACP control calculator
+ * (Fill in as desired)
+ *
+ * These should not conflict with bootstrap's CSS, but they may
+ * add more specific styles.
+ */
+
+button {
+  margin-bottom: 10px;
+}
+
+.user-control a{
+  font-size: 20px;
+  margin-right: 12px;
+  padding-bottom: 20px;
+}
